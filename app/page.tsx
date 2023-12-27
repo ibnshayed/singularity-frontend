@@ -22,7 +22,7 @@ export default function Home() {
 
   const handleMusicList = async (searchText: string) => {
     const { data } = await axios.get(
-      `http://localhost:4000/api/v1/music/find-all?searchtext=${searchText}`
+      `https://singularity-backend-0px4.onrender.com/api/v1/music/find-all?searchtext=${searchText}`
     );
     setMusicList(data.result);
   };
